@@ -1,0 +1,97 @@
+/* Start Variables */
+:root {
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+    --border-color: #ccc;
+}
+/* End Variables */
+
+/* Start Options Widget */
+.settings-page {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+.close-message {
+    border: 1px solid #eee;
+    resize: none;
+    min-height: 150px;
+}
+/* End Options Widget */
+/* Start General Box */
+.general-box :disabled {
+    cursor: no-drop;
+    background-color: #f0f4f8;
+    color: #bbb;
+}
+.general-box .form input {
+    border: 1px solid #eee;
+}
+.general-box .form input.email {
+    display: inline-flex;
+    width: calc(100% - 80px);
+    margin-right: 15px;
+}
+/* End General Box */
+/* Start Sequirty box */
+.security .options:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+/* End Sequirty box */
+/* Start Social Media Box */
+.social-section i {
+    width: 40px;
+    height: 40px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    transition: 0.3s;
+}
+.social-section input {
+    height: 40px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    padding-left: 10px;
+    border-radius: 0 6px 6px 0;
+}
+.social-section > div:focus-within i {
+    color: black;
+}
+/* End Social Media Box */
+/* Start CHeckbox Widjet */
+.checkbox-section > div label {
+    cursor: pointer;
+}
+.checkbox-section > div input {
+    width: 15px;
+    height: 15px;
+}
+/* End CHeckbox Widjet */
+/* Start Servers Box */
+.servers {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.servers input {
+    appearance: none;
+    -webkit-appearance: none;
+}
+.servers .server {
+    position: relative;
+    border: 1px solid #eee;
+}
+.servers .server label {
+    cursor: pointer;
+}
+.servers input[type="radio"]:checked + .server {
+    border: 2px solid var(--blue-color);
+    color: var(--blue-color);
+}
+/* End Servers Box */
