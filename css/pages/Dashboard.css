@@ -13,16 +13,16 @@
     overflow: hidden;
 }
 .welcome .intro img {
-    width: 170px;
-    margin-bottom: 10px;
+    width: 200px;
+    margin-bottom: -10px;
 }
 .welcome .avatar {
     width: 64px;
     height: 64px;
     border: 2px solid white;
     border-radius: 50%;
-    padding: 3px;
-    box-shadow: 0 0 10px #ddd;
+    padding: 2px;
+    box-shadow: 0 0 5px #ddd;
     margin-left: 20px;
     margin-top: -32px;
 }
@@ -40,37 +40,32 @@
 .welcome .visit:hover {
     background-color: var(--blue-alt-color);
 }
-/* End Welcome Widget */
-/* Responsive desing */
 @media (max-width: 767px) {
     .welcome .intro {
-        padding-bottom: 30px;
-
+    padding-bottom: 30px;
     }
     .welcome .avatar {
-        margin-left: 50%;
-        transform: translateX(-50%);
+    margin-left: 0;
     }
     .welcome .body > div:not(:last-child) {
-        margin-bottom: 20px;
+    margin-bottom: 20px;
     }
 }
-/* Start Welcome Widget */
-/* Start Quick draft widget */
-.quick-draft > form textarea {
+/* End Welcome Widget */
+/* Start Quick Draft Widget */
+.quick-draft textarea {
     resize: none;
     min-height: 180px;
 }
 .quick-draft .save {
     margin-left: auto;
-    transition: 0.2s;
+    transition: 0.3s;
     cursor: pointer;
 }
 .quick-draft .save:hover {
-    background-color: #0d69d5;
+    background-color: var(--blue-alt-color);
 }
-/* End Quick draft widget */
-/* Start Yearly Target */
+/* End Quick Draft Widget */
 /* Start Targets */
 .targets .target-row .icon {
     width: 80px;
@@ -129,19 +124,19 @@
 .green .progress {
     background-color: rgb(34 197 94 / 20%);
 }
-/* End Yearly Target */
-/* Start Tickets Widget */
+/* End Targets */
+/* Start Tickets */
 .tickets .box {
     border: 1px solid #ccc;
     width: calc(50% - 10px);
 }
 @media (max-width: 767px) {
     .tickets .box {
-        width: 100%;
+    width: 100%;
     }
 }
-/* End Tickets Widget */
-/* Start Latest news widget */
+/* End Tickets */
+/* Start Latest News */
 .latest-news .news-row:not(:last-of-type) {
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -152,9 +147,6 @@
     border-radius: 6px;
     margin-right: 15px;
 }
-.latest-news .label {
-    font-size: 13px;
-}
 .latest-news .info {
     flex-grow: 1;
 }
@@ -164,14 +156,14 @@
 }
 @media (max-width: 767px) {
     .latest-news .news-row {
-        display: block;
+    display: block;
     }
     .latest-news .news-row .label {
-        margin: 10px auto;
-        width: fit-content;
+    margin: 10px auto;
+    width: fit-content;
     }
 }
-/* End Latest news widget */
+/* End Latest News */
 /* Start Tasks */
 .tasks .task-row:not(:last-of-type) {
     margin-bottom: 15px;
@@ -184,7 +176,8 @@
 .tasks .done {
     opacity: 0.3;
 }
-.tasks .done h3, .tasks .done p {
+.tasks .done h3,
+.tasks .done p {
     text-decoration: line-through;
 }
 .tasks .delete {
@@ -195,17 +188,17 @@
     color: var(--red-color);
 }
 /* End Tasks */
-/* Start Latest Update */
-.latest-uploads ul li:not(:last-child){
+/* Start Latest Uploads */
+.latest-uploads ul li:not(:last-child) {
     border-bottom: 1px solid #eee;
 }
 .latest-uploads ul li img {
     width: 40px;
     height: 40px;
 }
-/* End Latest Update */
-/* Start latest project */
-.last-project ul:before {
+/* End Latest Uploads */
+/* Start Last Project */
+.last-project ul::before {
     content: "";
     position: absolute;
     left: 11px;
@@ -213,7 +206,7 @@
     height: 100%;
     background-color: var(--blue-color);
 }
-.last-project ul li:before {
+.last-project ul li::before {
     content: "";
     width: 20px;
     height: 20px;
@@ -225,30 +218,20 @@
     margin-right: 15px;
     z-index: 1;
 }
-.last-project ul li.done:before {
+.last-project ul li.done::before {
     background-color: var(--blue-color);
 }
-.last-project ul li.current:before {
+.last-project ul li.current::before {
     animation: change-color 0.8s infinite alternate;
 }
-.last-project img {
+.last-project .launch-icon {
     position: absolute;
-    width: 140px;
+    width: 160px;
     right: 0;
     bottom: 0;
     opacity: 0.1;
 }
-/* Start Anumations */
-@keyframes change-color {
-    from {
-        background-color: var(--blue-color);
-    }
-    to {
-        background-color: white;
-    }
-}
-/* End Anumations */
-/* End latest project */
+/* End Last Project */
 /* Start Reminders */
 .reminders ul li .key {
     width: 15px;
@@ -266,7 +249,7 @@
 .reminders ul li > .red {
     border-left: 2px solid var(--red-color);
 }
-/* Start Reminders */
+/* End Reminders */
 /* Start Latest Post */
 .latest-post .avatar {
     width: 48px;
@@ -280,7 +263,7 @@
     min-height: 140px;
 }
 /* End Latest Post */
-/* Start Social Media States */
+/* Start Social Media */
 .social-media .box {
     padding-left: 70px;
 }
@@ -289,23 +272,8 @@
     left: 0;
     top: 0;
     width: 52px;
-    transition: 0.2s;
+    transition: 0.3s;
 }
-.social-media .box i:hover {
-    transform: rotate(5deg);
-}
-.social-media .twitter {
-    background-color: #1da0f259;
-    color: #1da1f2;
-}
-.social-media .twitter i,
-.social-media .twitter a {
-    background-color: #1da1f2;
-    cursor: pointer;
-}
-/* End Social Media States */
-/* Start Social Media */
-
 .social-media .box i:hover {
     transform: rotate(5deg);
 }
@@ -381,4 +349,3 @@
 .projects table .label {
     font-size: 13px;
 }
-  /* End Projects Table */

@@ -17,6 +17,7 @@
 }
 .courses-page .cover {
     max-width: 100%;
+    min-width: 100%;
 }
 .courses-page .instructor {
     position: absolute;
