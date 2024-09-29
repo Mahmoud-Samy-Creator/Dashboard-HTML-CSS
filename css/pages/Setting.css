@@ -15,6 +15,11 @@
 .settings-page {
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
+@media (max-width: 767px) {
+    .settings-page {
+        grid-template-columns: 1fr;
+    }
+}
 .close-message {
     border: 1px solid #eee;
     resize: none;

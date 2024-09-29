@@ -168,7 +168,7 @@ ul {
 }
 @media (max-width: 767px) {
     .wrapper {
-    /* grid-template-columns: minmax(200px, 1fr); */
+    grid-template-columns: 1fr;
     margin-left: 10px;
     margin-right: 10px;
     gap: 10px;

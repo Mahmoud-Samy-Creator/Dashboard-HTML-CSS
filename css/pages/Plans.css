@@ -63,6 +63,7 @@
 }
 @media (max-width: 767px) {
     .plans-page {
+        grid-template-columns: 1fr;
         margin-left: 10px;
         margin-right: 10px;
         gap: 10px;
