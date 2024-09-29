@@ -12,6 +12,11 @@
 .courses-page {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
+@media (max-width: 767px) {
+    .courses-page {
+        grid-template-columns: 1fr;
+    }
+}
 .courses-page .course {
     overflow: hidden;
 }

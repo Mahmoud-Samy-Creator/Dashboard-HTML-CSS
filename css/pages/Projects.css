@@ -12,14 +12,6 @@
 .projects-page {
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
-@media (max-width: 767px) {
-    .projects-page {
-        grid-template-columns: 1fr;
-        margin-left: 10px;
-        margin-right: 10px;
-        gap: 10px;
-    }
-}
 .project .date {
     top: 10px;
     right: 10px;
@@ -64,20 +56,6 @@
     margin-left: 5px;
     width: fit-content;
 }
-@media (max-width: 767px) {
-    .project .techs {
-        flex-direction: column;
-    }
-    .project .techs span:not(:last-of-type) {
-        margin-bottom: 15px;
-    }
-    .project .info {
-        flex-direction: column;
-    }
-    .progress {
-        margin-bottom: 15px;
-    }
-}
 .project .info {
     border-top: 1px solid #eee;
     margin-top: 15px;
@@ -95,3 +73,23 @@
     border-radius: 6px;
 }
 /* End Projects Page */
+@media (max-width: 767px) {
+    .projects-page {
+        grid-template-columns: 1fr;
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+    .project .techs {
+        flex-direction: column;
+    }
+    .project .techs span:not(:last-of-type) {
+        margin-bottom: 15px;
+    }
+    .project .info {
+        flex-direction: column;
+    }
+    .progress {
+        margin-bottom: 15px;
+    }
+}
