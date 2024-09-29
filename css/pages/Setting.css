@@ -81,7 +81,11 @@
 .servers {
     border-top: 1px solid #eee;
     padding-top: 20px;
-    flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+    .servers {
+        flex-wrap: wrap;
+    }
 }
 
 .servers input {
